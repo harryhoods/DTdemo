@@ -137,7 +137,7 @@
     } // API Call failed
     else{
         NSArray *response = [NSJSONSerialization JSONObjectWithData:apiResponse options:0 error:nil];
-        NSLog(@"[MapViewController] RAW JSON RESPONSE: %@ ",response);
+        //NSLog(@"[MapViewController] RAW JSON RESPONSE: %@ ",response);
         
         if (apiError != nil) {
             NSLog(@"JSON Parse error: %@", apiError);
@@ -163,7 +163,7 @@
 
                 [annotations addObject:anotationPoint];
                 //NSLog(@"[MapViewController] JSON response for request [%@]: [%f]",self.choiceValue,lng);
-                NSLog(@"[MapViewController] added [%@] annotation for [%@]: [%f],[%f]",anotationPoint.subtitle,anotationPoint.title,lat,lng);
+                //NSLog(@"[MapViewController] added [%@] annotation for [%@]: [%f],[%f]",anotationPoint.subtitle,anotationPoint.title,lat,lng);
             }
 
             //Clear all the previous annotations
